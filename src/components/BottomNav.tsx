@@ -1,5 +1,5 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { LayoutDashboard, BookOpen, Calendar, BarChart3 } from "lucide-react";
+import { LayoutDashboard, BookOpen, Calendar, BarChart3, Settings } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { motion } from "framer-motion";
 
@@ -8,6 +8,7 @@ const navItems = [
   { to: "/subjects", icon: BookOpen, labelKey: "nav.subjects" as const },
   { to: "/planner", icon: Calendar, labelKey: "nav.planner" as const },
   { to: "/progress", icon: BarChart3, labelKey: "nav.progress" as const },
+  { to: "/settings", icon: Settings, labelKey: "nav.settings" as const },
 ];
 
 export function BottomNav() {
