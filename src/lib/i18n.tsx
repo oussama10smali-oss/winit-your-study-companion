@@ -44,6 +44,13 @@ const translations = {
   "progress.bySubject": { darija: "حسب المادة", fr: "Par matière" },
   "progress.hoursChart": { darija: "ساعات القراية هاد السيمانة", fr: "Heures d'étude cette semaine" },
 
+  // Settings
+  "settings.title": { darija: "الإعدادات", fr: "Paramètres" },
+  "settings.language": { darija: "اللغة", fr: "Langue" },
+  "settings.qrcode": { darija: "QR Code ديال التطبيق", fr: "QR Code de l'app" },
+  "settings.scanQr": { darija: "سكاني باش تفتح التطبيق", fr: "Scannez pour ouvrir l'app" },
+  "nav.settings": { darija: "الإعدادات", fr: "Paramètres" },
+
   // Common
   "common.save": { darija: "حفظ", fr: "Enregistrer" },
   "common.cancel": { darija: "إلغاء", fr: "Annuler" },
