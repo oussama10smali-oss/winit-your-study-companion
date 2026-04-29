@@ -63,13 +63,13 @@ function SubjectsPage() {
             exit={{ opacity: 0, height: 0 }}
             className="overflow-hidden mb-4"
           >
-            <div className="rounded-2xl bg-card p-4 shadow-sm border border-border/50 space-y-3">
+            <div className="rounded-2xl glass-panel p-4 space-y-3">
               <input
                 type="text"
                 placeholder={t("subjects.name")}
                 value={newName}
                 onChange={(e) => setNewName(e.target.value)}
-                className="w-full rounded-xl bg-secondary px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-primary/30"
+                className="w-full rounded-xl glass-input px-4 py-2.5 text-sm"
               />
               <div className="flex gap-2">
                 {colorOptions.map((c) => (
@@ -104,7 +104,7 @@ function SubjectsPage() {
 
           return (
             <StaggerItem key={subject.id}>
-              <div className="rounded-2xl bg-card shadow-sm border border-border/50 overflow-hidden">
+              <div className="rounded-2xl glass-panel overflow-hidden">
                 <div className="flex items-center gap-3 p-4">
                   <div className={`h-11 w-11 rounded-xl flex items-center justify-center ${
                     subject.color === "violet" ? "gradient-violet text-violet-foreground" :
@@ -161,7 +161,7 @@ function SubjectsPage() {
                         value={chapterName}
                         onChange={(e) => setChapterName(e.target.value)}
                         onKeyDown={(e) => e.key === "Enter" && handleAddChapter(subject.id)}
-                        className="flex-1 rounded-lg bg-secondary px-3 py-1.5 text-sm outline-none focus:ring-2 focus:ring-primary/30"
+                        className="flex-1 rounded-lg glass-input px-3 py-1.5 text-sm"
                         autoFocus
                       />
                       <button onClick={() => handleAddChapter(subject.id)} className="rounded-lg gradient-hero px-3 py-1.5 text-xs font-semibold text-primary-foreground">

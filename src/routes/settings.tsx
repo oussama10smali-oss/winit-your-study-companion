@@ -25,7 +25,7 @@ function SettingsPage() {
       <StaggerContainer className="space-y-4">
         {/* Language */}
         <StaggerItem>
-          <div className="rounded-2xl bg-card p-5 shadow-sm border border-border/50">
+          <div className="rounded-2xl glass-panel p-5">
             <div className="flex items-center gap-2 mb-4">
               <Globe size={18} className="text-primary" />
               <h3 className="font-semibold">{t("settings.language")}</h3>
@@ -50,7 +50,7 @@ function SettingsPage() {
 
         {/* QR Code */}
         <StaggerItem>
-          <div className="rounded-2xl bg-card p-5 shadow-sm border border-border/50">
+          <div className="rounded-2xl glass-panel p-5">
             <div className="flex items-center gap-2 mb-4">
               <QrCode size={18} className="text-turquoise" />
               <h3 className="font-semibold">{t("settings.qrcode")}</h3>

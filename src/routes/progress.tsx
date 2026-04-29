@@ -69,7 +69,7 @@ function ProgressPage() {
 
         {/* Weekly Chart */}
         <StaggerItem>
-          <div className="rounded-2xl bg-card p-5 shadow-sm border border-border/50">
+          <div className="rounded-2xl glass-panel p-5">
             <h3 className="font-semibold mb-4">{t("progress.hoursChart")}</h3>
             <div className="h-40">
               <ResponsiveContainer width="100%" height="100%">
@@ -89,7 +89,7 @@ function ProgressPage() {
 
         {/* By Subject */}
         <StaggerItem>
-          <div className="rounded-2xl bg-card p-5 shadow-sm border border-border/50">
+          <div className="rounded-2xl glass-panel p-5">
             <h3 className="font-semibold mb-4">{t("progress.bySubject")}</h3>
             <div className="space-y-4">
               {subjectData.map((s) => (

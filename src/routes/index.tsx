@@ -51,7 +51,7 @@ function Dashboard() {
 
         {/* Progress Ring */}
         <StaggerItem>
-          <div className="rounded-2xl bg-card p-5 shadow-sm border border-border/50">
+          <div className="rounded-2xl glass-panel p-5">
             <div className="flex items-center gap-2 mb-3">
               <TrendingUp size={18} className="text-primary" />
               <h3 className="font-semibold">{t("dashboard.weeklyProgress")}</h3>
@@ -97,7 +97,7 @@ function Dashboard() {
 
         {/* Today's Sessions */}
         <StaggerItem>
-          <div className="rounded-2xl bg-card p-5 shadow-sm border border-border/50">
+          <div className="rounded-2xl glass-panel p-5">
             <h3 className="font-semibold mb-3">{t("dashboard.todayPlan")}</h3>
             {todaySessions.length === 0 ? (
               <p className="text-sm text-muted-foreground">{t("dashboard.noSessions")}</p>
@@ -139,7 +139,7 @@ function Dashboard() {
 
 function StatCard({ icon, value, label, variant }: { icon: React.ReactNode; value: string; label: string; variant: string }) {
   return (
-    <div className="rounded-xl bg-card p-3 shadow-sm border border-border/50 text-center">
+    <div className="rounded-xl glass-panel p-3 text-center">
       <div className={`mx-auto mb-1.5 flex h-8 w-8 items-center justify-center rounded-lg ${
         variant === "violet" ? "bg-violet/10 text-violet" :
         variant === "turquoise" ? "bg-turquoise/10 text-turquoise" :

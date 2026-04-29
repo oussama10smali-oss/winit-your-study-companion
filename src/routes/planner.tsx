@@ -60,11 +60,11 @@ function PlannerPage() {
             exit={{ opacity: 0, height: 0 }}
             className="overflow-hidden mb-4"
           >
-            <div className="rounded-2xl bg-card p-4 shadow-sm border border-border/50 space-y-3">
+            <div className="rounded-2xl glass-panel p-4 space-y-3">
               <select
                 value={form.subjectId}
                 onChange={(e) => setForm({ ...form, subjectId: e.target.value, chapterId: "" })}
-                className="w-full rounded-xl bg-secondary px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-primary/30"
+                className="w-full rounded-xl glass-input px-4 py-2.5 text-sm"
               >
                 <option value="">{t("planner.subject")}</option>
                 {subjects.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
@@ -74,7 +74,7 @@ function PlannerPage() {
                 <select
                   value={form.chapterId}
                   onChange={(e) => setForm({ ...form, chapterId: e.target.value })}
-                  className="w-full rounded-xl bg-secondary px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-primary/30"
+                  className="w-full rounded-xl glass-input px-4 py-2.5 text-sm"
                 >
                   <option value="">{t("planner.chapter")}</option>
                   {selectedSubject.chapters.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
@@ -85,17 +85,17 @@ function PlannerPage() {
                 <div>
                   <label className="text-[10px] text-muted-foreground mb-1 block">{t("planner.date")}</label>
                   <input type="date" value={form.date} onChange={(e) => setForm({ ...form, date: e.target.value })}
-                    className="w-full rounded-lg bg-secondary px-2 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30" />
+                    className="w-full rounded-lg glass-input px-2 py-2 text-sm" />
                 </div>
                 <div>
                   <label className="text-[10px] text-muted-foreground mb-1 block">{t("planner.time")}</label>
                   <input type="time" value={form.startTime} onChange={(e) => setForm({ ...form, startTime: e.target.value })}
-                    className="w-full rounded-lg bg-secondary px-2 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30" />
+                    className="w-full rounded-lg glass-input px-2 py-2 text-sm" />
                 </div>
                 <div>
                   <label className="text-[10px] text-muted-foreground mb-1 block">{t("planner.duration")}</label>
                   <input type="number" value={form.duration} onChange={(e) => setForm({ ...form, duration: Number(e.target.value) })}
-                    className="w-full rounded-lg bg-secondary px-2 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30" />
+                    className="w-full rounded-lg glass-input px-2 py-2 text-sm" />
                 </div>
               </div>
 
@@ -129,7 +129,7 @@ function PlannerPage() {
                       <motion.div
                         key={session.id}
                         layout
-                        className={`flex items-center gap-3 rounded-xl p-3 transition-all ${session.completed ? "bg-success/10 border border-success/20" : "bg-card border border-border/50 shadow-sm"}`}
+                        className={`flex items-center gap-3 rounded-xl p-3 transition-all ${session.completed ? "bg-success/10 border border-success/20" : "glass-panel"}`}
                       >
                         <button onClick={() => toggleSession(session.id)} className="shrink-0">
                           {session.completed ? (
