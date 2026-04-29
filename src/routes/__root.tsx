@@ -68,12 +68,15 @@ function RootComponent() {
   return (
     <I18nProvider>
       <AppProvider>
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="mx-auto w-full max-w-lg flex-1 px-4 pb-24 pt-4">
-            <Outlet />
-          </main>
-          <BottomNav />
+        <div className="relative flex min-h-screen flex-col">
+          <div className="ambient-bg" aria-hidden="true" />
+          <div className="relative z-10 flex min-h-screen flex-col">
+            <Header />
+            <main className="mx-auto w-full max-w-lg flex-1 px-4 pb-24 pt-4">
+              <Outlet />
+            </main>
+            <BottomNav />
+          </div>
         </div>
       </AppProvider>
     </I18nProvider>
