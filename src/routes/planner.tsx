@@ -103,7 +103,7 @@ function PlannerPage() {
                 <button onClick={handleAdd} className="flex-1 rounded-xl gradient-hero py-2.5 text-sm font-semibold text-primary-foreground active:scale-95">
                   {t("common.save")}
                 </button>
-                <button onClick={() => setShowAdd(false)} className="flex-1 rounded-xl bg-secondary py-2.5 text-sm font-medium active:scale-95">
+                <button onClick={() => setShowAdd(false)} className="flex-1 rounded-xl glass-button py-2.5 text-sm font-medium active:scale-95">
                   {t("common.cancel")}
                 </button>
               </div>

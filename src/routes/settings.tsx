@@ -38,7 +38,7 @@ function SettingsPage() {
                   className={`rounded-xl px-4 py-3 text-sm font-medium transition-all active:scale-95 ${
                     lang === l.value
                       ? "gradient-hero text-primary-foreground shadow-glow-violet"
-                      : "bg-secondary text-secondary-foreground hover:bg-accent"
+                      : "glass-button text-foreground"
                   }`}
                 >
                   {l.label}
